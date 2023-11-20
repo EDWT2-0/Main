@@ -15,39 +15,35 @@
   </script>
   
   <style>
-    /* CSS styles for the Mortgage Calculator */
-    div {
-      text-align: center;
-      margin: 20px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-  
     h1 {
-      font-size: 28px;
-      color: #333;
+      font-size: 24px;
       margin-bottom: 10px;
     }
   
-    input {
-      font-size: 18px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+  
+    input[type="number"] {
       padding: 8px;
+      font-size: 16px;
       width: 100%;
-      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
   
     button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
       background-color: #3498db;
       color: #fff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
+      transition: background-color 0.3s ease;
     }
   
     button:hover {
@@ -55,9 +51,8 @@
     }
   
     p {
-      font-size: 20px;
-      margin-top: 20px;
-      color: #555;
+      margin-top: 10px;
+      font-size: 18px;
     }
   </style>
   

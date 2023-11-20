@@ -45,43 +45,70 @@
 </main>
 
 <style>
+  :root {
+    --background-light: #f7f7f7;
+    --background-dark: #333;
+    --text-light: #333;
+    --text-dark: #f7f7f7;
+    --button-light: #0078d4;
+    --button-dark: #005ea2;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--background-dark);
+      --text: var(--text-dark);
+      --button: var(--button-dark);
+    }
+
+    input[type="file"],
+    button {
+      background-color: var(--button);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="file"]:hover,
+    button:hover {
+      background-color: darken(var(--button), 10%);
+    }
+
+    input[type="file"]:focus,
+    button:focus {
+      outline: none;
+    }
+
+    img {
+      border: 1px solid var(--button);
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+  }
+
+  /* Other styles */
   main {
-    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
   }
 
   h1 {
     font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
-  input[type="file"] {
-    margin: 10px;
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
   }
 
+  input[type="file"],
   button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-
-  button:hover {
-    background-color: #2980b9;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
+    font-size: 16px;
+    margin: 10px;
   }
 </style>

@@ -40,49 +40,39 @@
   </script>
   
   <style>
-    /* CSS styles similar to the provided style */
+    /* Your CSS styles here */
     div {
       text-align: center;
-      margin: 20px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
     }
   
-    h1 {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 10px;
+    select, button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+  
+    select {
+      background-color: #f8f9fa;
+      border: 1px solid #ced4da;
+      color: #495057;
     }
   
     button {
-      background-color: #3498db;
+      background-color: #007bff;
       color: #fff;
       border: none;
-      padding: 12px 24px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
     }
   
     button:hover {
-      background-color: #2980b9;
+      background-color: #0056b3;
     }
   
     p {
-      font-size: 20px;
-      margin-top: 20px;
-      color: #555;
-    }
-  
-    /* Style for the company type dropdown */
-    select {
       font-size: 18px;
-      padding: 8px;
-      width: 100%;
       margin-top: 10px;
     }
   </style>

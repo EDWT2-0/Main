@@ -23,55 +23,49 @@
   </div>
   
   <style>
-    /* Your provided CSS styles */
     .tip-calculator {
-      text-align: center;
-      margin: 20px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      border: 1px solid #ccc;
       padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      width: 300px;
+      margin: auto;
+      text-align: center;
     }
   
     h1 {
-      font-size: 28px;
-      color: #333;
+      font-size: 24px;
       margin-bottom: 10px;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    input[type="number"],
+    button {
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
   
     button {
       background-color: #3498db;
       color: #fff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 20px;
       cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
+      transition: background-color 0.3s ease;
     }
   
     button:hover {
       background-color: #2980b9;
     }
   
-    label {
-      font-size: 18px;
-      margin: 10px;
-    }
-  
-    input {
-      font-size: 18px;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin: 10px;
-    }
-  
     p {
-      font-size: 20px;
-      margin-top: 20px;
-      color: #555;
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
   

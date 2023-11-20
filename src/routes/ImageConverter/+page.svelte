@@ -54,46 +54,76 @@
 </main>
 
 <style>
+  :root {
+    --background-light: #f7f7f7;
+    --background-dark: #333;
+    --text-light: #333;
+    --text-dark: #f7f7f7;
+    --button-light: #0078d4;
+    --button-dark: #005ea2;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--background-dark);
+      --text: var(--text-dark);
+      --button: var(--button-dark);
+    }
+
+    input[type="file"],
+    select,
+    input[type="checkbox"],
+    button {
+      background-color: var(--button);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="file"]:focus,
+    select:focus,
+    input[type="checkbox"]:focus,
+    button:focus {
+      outline: none;
+    }
+
+    button:hover {
+      background-color: darken(var(--button), 10%);
+    }
+  }
+
+  /* Other styles */
   main {
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
   }
 
   h1 {
     font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
-  input[type="file"] {
-    margin: 10px;
-  }
-
+  input[type="file"],
   select {
     font-size: 16px;
     padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
   }
 
-  label {
-    margin-right: 10px;
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-
-  button:hover {
-    background-color: #2980b9;
+    cursor: pointer;
   }
 </style>

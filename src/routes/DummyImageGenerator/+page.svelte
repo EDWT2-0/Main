@@ -40,43 +40,58 @@
 </script>
 
 <style>
-  div {
-    text-align: center;
-    margin: 20px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Your CSS styles here */
+  :root {
+      --background-light: #f7f7f7;
+      --background-dark: #333;
+      --text-light: #333;
+      --text-dark: #f7f7f7;
+      --button-light: #0078d4;
+      --button-dark: #005ea2;
   }
 
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --background: var(--background-dark);
+          --text: var(--text-dark);
+          --button: var(--button-dark);
+      }
+
+      button {
+          background-color: var(--button);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 8px 12px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin: 5px;
+      }
+
+      button:hover {
+          background-color: darken(var(--button), 10%);
+      }
+
+      img {
+          border: 1px solid var(--text);
+          max-width: 100%;
+          height: auto;
+          margin-top: 10px;
+      }
+  }
+
+  /* Other styles for the component */
   h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: var(--text);
   }
 
-  button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-
-  button:hover {
-    background-color: #2980b9;
-  }
-
-  img {
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+  div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
   }
 </style>
 

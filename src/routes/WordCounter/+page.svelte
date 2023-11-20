@@ -32,35 +32,77 @@
   </main>
   
   <style>
-    /* Add your CSS styles here */
+    :root {
+      --background-light: #f7f7f7;
+      --background-dark: #333;
+      --text-light: #333;
+      --text-dark: #f7f7f7;
+      --button-light: #0078d4;
+      --button-dark: #005ea2;
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: var(--background-dark);
+        --text: var(--text-dark);
+      }
+  
+      textarea,
+      p {
+        background-color: var(--button);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+  
+      textarea:focus {
+        outline: none;
+      }
+    }
+  
+    /* Other styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: var(--background);
+      color: var(--text);
+    }
+  
     main {
       text-align: center;
-      margin: 20px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
     }
   
     h1 {
       font-size: 28px;
-      color: #333;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   
     textarea {
       width: 100%;
-      min-height: 200px;
-      padding: 10px;
-      font-size: 18px;
-      border: 1px solid #ccc;
+      font-size: 16px;
+      padding: 8px;
       border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      box-sizing: border-box;
     }
   
     p {
-      font-size: 20px;
-      color: #555;
-      margin-top: 20px;
+      font-size: 18px;
+      margin-bottom: 15px;
     }
   </style>
-  

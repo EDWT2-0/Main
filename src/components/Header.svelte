@@ -26,7 +26,7 @@
         <div class="flex justify-between items-center">
             <div class="flex items-center gap-3 group min-w-fit">
                 
-                <a href="https://ko-fi.com/murph">
+                <a>
                     <img src="https://avatars.githubusercontent.com/u/144571417?s=200&v=4" alt="pfp" class="h-10 w-10 rounded-full shadow-lg" />
                 </a>
                 <a href="/" class="text-2xl font-bold"> Everydaywebthings </a>

@@ -246,7 +246,6 @@
 
 	</h2>
 	<div class="buttons-container">
-		<a href="/ImageResizer" class="button">Image Resizer</a>
 		<a href="/CalorieCounter" class="button">Calorie Counter</a>
 		<a href="/RandomWorkouts" class="button">Random Workouts</a>
 		<a href="/PositiveAffirmations" class="button">Positive Affirmations</a>

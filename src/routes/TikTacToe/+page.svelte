@@ -56,6 +56,59 @@ import GoogleAds from '../../components/GoogleAds.svelte';
 </script>
 
 <style>
+  :root {
+    --background-light: #f7f7f7;
+    --background-dark: #333;
+    --text-light: #333;
+    --text-dark: #f7f7f7;
+    --button-light: #0078d4;
+    --button-dark: #005ea2;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--background-dark);
+      --text: var(--text-dark);
+      --button: var(--button-dark);
+    }
+
+    .square {
+      background-color: var(--button);
+      color: white;
+    }
+
+    .reset-button {
+      background-color: var(--button);
+      color: white;
+    }
+
+    .reset-button:hover {
+      background-color: darken(var(--button), 10%);
+    }
+
+    .status {
+      color: var(--text);
+    }
+  }
+
+  /* Other styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -74,9 +127,10 @@ import GoogleAds from '../../components/GoogleAds.svelte';
     font-weight: bold;
     background-color: #f0f0f0;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
-  .winner {
+  .square.winner {
     background-color: #6aff6a;
   }
 
@@ -96,6 +150,7 @@ import GoogleAds from '../../components/GoogleAds.svelte';
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
 
   .reset-button:hover {

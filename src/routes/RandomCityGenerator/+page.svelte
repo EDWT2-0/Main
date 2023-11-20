@@ -22,62 +22,31 @@
   </script>
   
   <style>
-    main {
+    /* Your CSS styles here */
+    div {
       text-align: center;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  
-    .input-group {
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center;
-  margin: 10px;
-}
-
-
-    label {
-      flex: 1;
-      text-align: left;
-      margin-right: 10px;
-    }
-  
-    .result {
       margin-top: 20px;
     }
   
-    h1 {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-  
     button {
-      background-color: #3498db;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      background-color: #007bff;
       color: #fff;
       border: none;
-      padding: 12px 24px;
-      font-size: 18px;
-      cursor: pointer;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
   
     button:hover {
-      background-color: #2980b9;
+      background-color: #0056b3;
     }
   
-    input[type="text"] {
+    p {
       font-size: 18px;
       margin-top: 10px;
-      color: #333;
-      padding: 8px;
-      width: 100%;
     }
   </style>
   

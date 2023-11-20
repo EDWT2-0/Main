@@ -202,67 +202,87 @@
   {/if}
 </main>
 
+
+
+
 <style>
-  /* Add your CSS styles here */
-  div {
+  /* Your CSS styles here */
+  :root {
+    --background-light: #f7f7f7;
+    --background-dark: #333;
+    --text-light: #333;
+    --text-dark: #f7f7f7;
+    --button-light: #0078d4;
+    --button-dark: #005ea2;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--background-dark);
+      --text: var(--text-dark);
+      --button: var(--button-dark);
+    }
+
+    select {
+      color: var(--text-dark);
+      background-color: var(--background);
+    }
+
+    input[type="number"],
+    button {
+      background-color: var(--button);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: darken(var(--button), 10%);
+    }
+  }
+
+  /* Other styles for the component */
+  main {
     text-align: center;
-    margin: 20px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   h1 {
     font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   label {
-    font-size: 20px;
-    color: #333;
     margin-right: 10px;
   }
 
-  select, input {
-    font-size: 18px;
+  select {
+    font-size: 16px;
     padding: 8px;
+    border-radius: 5px;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  input[type="number"] {
+    font-size: 16px;
+    padding: 8px;
     border-radius: 5px;
-  }
-
-  button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-  }
-
-  button:hover {
-    background-color: #2980b9;
-  }
-
-  p {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #555;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 60px;
   }
 
   ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
   }
 
   li {
-    font-size: 20px;
-    color: #555;
-    margin: 5px 0;
+    margin-bottom: 5px;
   }
 </style>
 

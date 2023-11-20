@@ -42,61 +42,37 @@ import GoogleAds from '../../components/GoogleAds.svelte';
   </script>
   
   <style>
-    /* Body styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-  
-    /* Countdown container styles */
+    /* Your CSS styles here */
     div {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
     }
   
-    /* Header styles */
     h2 {
       font-size: 24px;
-      color: #333;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   
-    /* Countdown timer styles */
     p {
-      font-size: 20px;
-      color: #555;
+      font-size: 18px;
+      margin-top: 5px;
     }
   
-    /* Button styles */
     button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 12px 24px;
+      padding: 8px 16px;
+      margin: 5px;
       font-size: 16px;
+      border: none;
+      border-radius: 4px;
       cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin: 10px;
+      background-color: #3498db;
+      color: white;
     }
   
     button:disabled {
-      background-color: #ccc;
+      background-color: #cccccc;
       cursor: not-allowed;
-    }
-  
-    button:hover {
-      background-color: #2980b9;
     }
   </style>
   

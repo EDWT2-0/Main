@@ -26,6 +26,39 @@ import GoogleAds from '../../components/GoogleAds.svelte';
 </script>
 
 <style>
+
+
+
+
+    /* Add your CSS styles here */
+
+    :root {
+  --bg-color-light: #f7f7f7; /* Light mode background color */
+  --text-color-light: #333; /* Light mode text color */
+  --accent-color-light: #3498db; /* Light mode accent color */
+  
+  --bg-color-dark: #222; /* Dark mode background color */
+  --text-color-dark: #ddd; /* Dark mode text color */
+  --accent-color-dark: #1976d2; /* Dark mode accent color */
+}
+
+/* Default to light mode */
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+}
+
+
+
+
   div {
     text-align: center;
     margin: 20px;
@@ -68,6 +101,8 @@ import GoogleAds from '../../components/GoogleAds.svelte';
     border: 2px solid #ccc;
     border-radius: 5px;
   }
+
+
 </style>
 
 <div>

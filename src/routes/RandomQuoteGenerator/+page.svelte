@@ -128,85 +128,78 @@
 
   
   <style>
-  /* Add your CSS styles here */
+    /* Your CSS styles here */
+    :root {
+        --background-light: #f7f7f7;
+        --background-dark: #333;
+        --text-light: #333;
+        --text-dark: #f7f7f7;
+        --button-light: #0078d4;
+        --button-dark: #005ea2;
+    }
 
-:root {
-  --bg-color-light: #f7f7f7; /* Light mode background color */
-  --text-color-light: #333; /* Light mode text color */
-  --accent-color-light: #3498db; /* Light mode accent color */
-  
-  --bg-color-dark: #222; /* Dark mode background color */
-  --text-color-dark: #ddd; /* Dark mode text color */
-  --accent-color-dark: #1976d2; /* Dark mode accent color */
-}
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background: var(--background-dark);
+            --text: var(--text-dark);
+            --button: var(--button-dark);
+        }
 
-/* Default to light mode */
-body {
-  background-color: var(--bg-color-light);
-  color: var(--text-color-light);
-}
+        select {
+            color: var(--text-dark);
+            background-color: var(--background);
+        }
 
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
-  }
-}
+        input[type="number"],
+        button {
+            background-color: var(--button);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-div {
-  text-align: center;
-  margin: 20px;
-  background-color: var(--bg-color-light);
-  color: var(--text-color-light);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+        button:hover {
+            background-color: darken(var(--button), 10%);
+        }
+    }
 
-h1 {
-  font-size: 28px;
-  color: var(--text-color-light);
-  margin-bottom: 10px;
-}
+    /* Other styles for the component */
+    main {
+        text-align: center;
+        padding: 20px;
+    }
 
-label {
-  font-size: 20px;
-  color: var(--text-color-light);
-  margin-right: 10px;
-}
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 
-select,
-input {
-  font-size: 18px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: var(--bg-color-light);
-  color: var(--text-color-light);
-}
+    label {
+        margin-right: 10px;
+    }
 
-button {
-  background-color: var(--accent-color-light);
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  margin-top: 10px;
-}
+    select {
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
 
-button:hover {
-  background-color: #2980b9;
-}
+    input[type="number"] {
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        width: 60px;
+    }
 
-p {
-  font-size: 20px;
-  margin-top: 20px;
-  color: var(--text-color-light);
-}
-
-  </style>
-  
+    p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+</style>

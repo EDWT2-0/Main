@@ -32,47 +32,25 @@
 </main>
 
 <style>
-  main {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  h1 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
+  /* Your CSS styles here */
   .palette {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
   }
 
   .color-box {
     width: 100px;
     height: 100px;
-    border: 2px solid #000;
     border-radius: 5px;
-    margin: 10px;
-  }
-
-  button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-
-  button:hover {
-    background-color: #2980b9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #333;
   }
 </style>

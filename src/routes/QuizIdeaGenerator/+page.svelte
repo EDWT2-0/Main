@@ -21,58 +21,121 @@
     let metaKeywords = "quiz, ideas, generator, category, difficulty";
   </script>
   
+  
+
+
+  
+
   <style>
-    /* Your provided CSS styles */
-    div {
-      text-align: center;
-      margin: 20px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-  
-    h1 {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-  
-    label {
-      font-size: 20px;
-      color: #333;
-      margin-right: 10px;
-    }
-  
-    select, input {
-      font-size: 18px;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-  
-    button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
-    }
-  
-    button:hover {
-      background-color: #2980b9;
-    }
-  
-    p {
-      font-size: 20px;
-      margin-top: 20px;
-      color: #555;
-    }
+   
+/* Your existing CSS */
+:root {
+  --background-light: #f7f7f7;
+  --background-dark: #333;
+  --text-light: #333;
+  --text-dark: #f7f7f7;
+  --button-light: #0078d4;
+  --button-dark: #005ea2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+    --button: var(--button-dark);
+  }
+
+  /* Added style for dark mode dropdown options */
+  select {
+    color: var(--text-dark);
+    background-color: var(--background);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+main {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: var(--button);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken(var(--button), 10%);
+}
+
+.insult {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Additional styling for the quiz elements */
+div {
+  text-align: center;
+  margin-top: 40px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
   </style>
+  
+  
+  
+  
+  
+
+
   
   <head>
     <title>{metaTitle}</title>

@@ -27,59 +27,31 @@
   </script>
   
   <style>
-    /* Body styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-  
-    /* Main container styles */
+    /* Your CSS styles here */
     main {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
     }
   
-    /* Header styles */
+    div {
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      width: 40%;
+    }
+  
     h1 {
       font-size: 24px;
-      color: #333;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   
-    /* Countdown and holiday container styles */
-    div {
-      margin-top: 20px;
-    }
-  
-    /* Days remaining styles */
     p {
-      font-size: 20px;
-      color: #555;
-    }
-  
-    /* Major holidays styles */
-    div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 10px 0;
-      border-top: 1px solid #ddd;
-      padding-top: 10px;
-    }
-  
-    /* Holiday name styles */
-    p:nth-child(1) {
-      font-weight: bold;
+      font-size: 18px;
+      margin-top: 5px;
     }
   </style>
   

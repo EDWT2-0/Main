@@ -115,113 +115,100 @@
   
   
   
-  <style>
+<style>
+  :root {
+    --background-light: #f9f9f9;
+    --background-dark: #1f1f1f;
+    --text-light: #333;
+    --text-dark: #eee;
+    --button-light: #0078d4;
+    --button-dark: #009688;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--background-dark);
+      --text: var(--text-dark);
+      --button: var(--button-dark);
+    }
+
+    /* Additional styling for dark mode */
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
     main {
       text-align: center;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      max-width: 400px;
-      margin: 0 auto;
     }
-  
+
     h1 {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
-  
+
     p {
-      margin: 10px 0;
+      font-size: 16px;
+      margin-bottom: 15px;
     }
-  
+
     button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 18px;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
       cursor: pointer;
+      background-color: var(--button);
+      color: white;
+      border: none;
       border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
+      transition: background-color 0.3s ease;
     }
-  
+
     button:hover {
-      background-color: #2980b9;
+      background-color: #005a4d;
     }
-  
-    .question-container {
-      text-align: left;
-      margin-top: 20px;
-    }
-  
-    .question {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-  
+
     .options {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-  
-    button.option-button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
-      width: 100%;
+
+    .option-button {
+      margin: 5px;
     }
-  
-    button.option-button:hover {
-      background-color: #2980b9;
-    }
-  
-    .summary {
-      margin-top: 20px;
-      text-align: left;
-    }
-  
-    .correct-answer {
-      color: #4CAF50; /* Green */
-    }
-  
-    .incorrect-answer {
-      color: #FF5252; /* Red */
-    }
-  
+
     .back-button {
-      background-color: #e74c3c;
-      color: #fff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
+      margin-top: 20px;
+      background-color: #666;
     }
-  
+
     .back-button:hover {
-      background-color: #c0392b;
+      background-color: #333;
     }
-  
+
     .description {
       margin-top: 20px;
-      font-size: 16px;
-      color: #555;
     }
-  </style>
+  }
+
+  /* Other styles for light mode */
+  body {
+    /* Add your light mode styles here */
+  }
+
+  /* Common styles for both light and dark modes */
+  /* ... */
+
+</style>
   
   <main>
     {#if quizStarted}

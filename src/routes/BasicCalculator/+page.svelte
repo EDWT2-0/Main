@@ -53,60 +53,51 @@ import GoogleAds from '../../components/GoogleAds.svelte';
 </div>
 
 
+
 <style>
   .calculator {
     width: 300px;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .display {
-    font-size: 32px;
-    text-align: right;
+    font-size: 24px;
     padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    text-align: right;
   }
 
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
   }
 
-  button {
-    font-size: 24px;
-    padding: 15px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: 2px solid #007bff;
-    border-radius: 10px;
+  .buttons button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.3s ease;
   }
 
-  button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+  .buttons button:hover {
+    background-color: #e0e0e0;
   }
 
-  /* Styling for the "=" and "C" buttons */
-  .equals {
+  .buttons button.equals {
     grid-column: span 2;
-    background-color: #28a745;
-    border: 2px solid #28a745;
   }
 
-  .clear {
-    background-color: #dc3545;
-    border: 2px solid #dc3545;
+  .buttons button.clear {
+    grid-column: span 2;
   }
 </style>
-
 

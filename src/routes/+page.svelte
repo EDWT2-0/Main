@@ -202,11 +202,10 @@
 
 	<!-- Category 2 -->
 <div class="category">
-	<h2 class="category-title">Science and Exploration
+	<h2 class="category-title">Astronomy Tools
 	</h2>
 	<div class="buttons-container">
 		<div class="button-row">
-			<a href="/AstronomyTools" class="button">Astronomy Tools</a>
 			<a href="/InteractivePeriodicTable" class="button">Interactive Periodic Table</a>
 			<a href="/SpaceNews" class="button">Space News</a>
 			<a href="/SpaceTriviaChallenge" class="button">Space Trivia Challenge</a>

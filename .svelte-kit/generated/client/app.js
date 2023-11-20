@@ -16,12 +16,12 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/RandomWordGenerator": [5],
-		"/aboutme": [3],
-		"/projects": [4],
-		"/support": [6],
-		"/university": [7],
-		"/work": [8]
+		"/Aboutus": [3],
+		"/Contactus": [4],
+		"/More": [5],
+		"/RandomParagraphGenerator": [6],
+		"/RandomQuoteGenerator": [7],
+		"/Reportabug": [8]
 	};
 
 export const hooks = {

@@ -6,10 +6,10 @@
 
     export const menus = [
         { name: 'Home', href: '/' },
-        { name: 'About Us', href: '/aboutme' },
-        { name: 'More Projects', href: '/work' },
-        { name: 'Contact Us', href: '/projects' },
-        { name: 'Report a bug', href: '/university' }
+        { name: 'About Us', href: '/Aboutus' },
+        { name: 'More Projects', href: '/More' },
+        { name: 'Contact Us', href: '/Contactus' },
+        { name: 'Report a bug', href: '/Reportabug' }
     ];
 
     let menuOpen = false;

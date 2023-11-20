@@ -1,11 +1,11 @@
 {
 	"/": [],
-	"/RandomWordGenerator": [],
-	"/aboutme": [],
-	"/projects": [],
-	"/support": [],
-	"/university": [],
-	"/work": [
-		"src/routes/work/+page.ts"
+	"/Aboutus": [],
+	"/Contactus": [],
+	"/More": [],
+	"/RandomParagraphGenerator": [],
+	"/RandomQuoteGenerator": [],
+	"/Reportabug": [
+		"src/routes/Reportabug/+page.ts"
 	]
 }

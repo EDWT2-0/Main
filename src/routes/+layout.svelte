@@ -8,8 +8,7 @@
 
 	inject({ mode: dev ? 'development' : 'production' });
 
-	console.log('Hello World!');
-	console.log('Have fun taking a look behind the scenes :)');
+	
 
 	/* import { onNavigate } from '$app/navigation';
 	onNavigate((navigation) => {

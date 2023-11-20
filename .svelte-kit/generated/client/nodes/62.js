@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/SimpleWeatherInfo/+page.svelte";
+export { default as component } from "../../../../src/routes/ScreenRuler/+page.svelte";

@@ -1,67 +1,64 @@
-<!-- Page.svelte -->
-
 <style>
 	/* Basic CSS for layout and styling */
 	.categories {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-	margin-top: 20px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  gap: 20px;
+	  margin-top: 20px;
 	}
 	
 	.category {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  gap: 10px;
 	}
 	
 	.category-title {
-	font-size: 1.2rem;
-	margin-bottom: 5px;
+	  font-size: 1.2rem;
+	  margin-bottom: 5px;
 	}
 	
 	.buttons-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 10px;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  gap: 10px;
 	}
 	
 	.button {
-	padding: 10px 20px;
-	background-color: #3498db;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	transition: background-color 0.3s ease;
+	  padding: 10px 20px;
+	  background-color: #3498db;
+	  color: white;
+	  border: none;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  transition: background-color 0.3s ease;
 	}
 	
 	.button:hover {
-	background-color: #2980b9;
+	  background-color: #2980b9;
 	}
-	
 	
 	/* Media query for mobile devices */
 	@media (max-width: 768px) {
-	.buttons-container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 10px;
+	  .buttons-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	  }
+	  
+	  .button {
+		padding: 6px 12px; /* Adjusted smaller padding for smaller buttons */
+		font-size: 12px; /* Adjusted font size for smaller buttons */
+	  }
 	}
-	
-	.button {
-	padding: 6px 12px; /* Adjusted smaller padding for smaller buttons */
-	font-size: 12px; /* Adjusted font size for smaller buttons */
-	}
-	}
-	
-	</style>
-	
+  </style>
+  
+  
 	
 	
 	<div class="categories">
@@ -197,15 +194,14 @@
 	</div>
 
 
+	
 
 
-
-	<!-- Category 2 -->
+<!-- Category 2 -->
 <div class="category">
 	<h2 class="category-title">Astronomy Tools
 	</h2>
 	<div class="buttons-container">
-		<div class="button-row">
 			<a href="/InteractivePeriodicTable" class="button">Interactive Periodic Table</a>
 			<a href="/SpaceNews" class="button">Space News</a>
 			<a href="/SpaceTriviaChallenge" class="button">Space Trivia Challenge</a>
@@ -259,5 +255,5 @@
 
 	
 	<!-- Add more categories in the same format -->
-	</div>
+	
 	

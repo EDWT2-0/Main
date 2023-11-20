@@ -9,7 +9,6 @@
         { name: 'About Us', href: '/Aboutus' },
         { name: 'More Projects', href: '/More' },
         { name: 'Contact Us', href: '/Contactus' },
-        { name: 'Report a bug', href: '/Reportabug' }
     ];
 
     let menuOpen = false;

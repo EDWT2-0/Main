@@ -1,17 +1,32 @@
+<!-- 404.svelte -->
 <script>
-	import { page } from '$app/stores';
-</script>
-
-<svelte:head>
-	<title>Error {$page.status} | Murphy</title>
-	<meta name="description" content="Error {$page.status}." />
-</svelte:head>
-
-<div class="heading">
-	<h1 class="title md:before:content-['😥_'] md:after:content-['_💔']">
-		Error {$page.status}
-	</h1>
-	<h2 class="subtitle">
-		{$page.error?.message} :(
-	</h2>
-</div>
+	export let error = "Page Not Found"; // Customizable error message
+  </script>
+  
+  <main>
+	<h1>{error}</h1>
+	<p>Sorry, the page you are looking for does not exist.</p>
+	<!-- You can add more content or customize the message here -->
+  </main>
+  
+  <style>
+	main {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  height: 40vh;
+	  text-align: center;
+	}
+  
+	h1 {
+	  font-size: 3rem;
+	  margin-bottom: 10px;
+	}
+  
+	p {
+	  font-size: 1.2rem;
+	  color: #888;
+	}
+  </style>
+  

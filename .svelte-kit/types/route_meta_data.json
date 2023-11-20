@@ -1,0 +1,11 @@
+{
+	"/": [],
+	"/RandomWordGenerator": [],
+	"/aboutme": [],
+	"/projects": [],
+	"/support": [],
+	"/university": [],
+	"/work": [
+		"src/routes/work/+page.ts"
+	]
+}

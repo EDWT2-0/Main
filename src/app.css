@@ -61,14 +61,9 @@ body {
         @apply text-xl alt-color sm:text-center md:mt-6 w-[90%] sm:w-full;
     }
 
-    .rainbow-bg {
-        background-image: linear-gradient(45deg, #ff83d3, #a28be7, #659cff, #37ff42, #ffd03e, #ffb057, #ff4c55);
-    }
+    
 
-    .rainbow-text {
-        @apply bg-clip-text text-transparent;
-        background-image: linear-gradient(-70deg, #ff83d3, #a28be7, #659cff, #37ff42, #ffd03e, #ffb057, #ff4c55);
-    }
+    
 }
 
 @keyframes rainbow-animation {

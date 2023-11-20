@@ -1,53 +1,47 @@
-<script lang="ts">
-	let murphy = 'Murphy';
-	let interval: any;
-
-	function grow() {
-		clearInterval(interval);
-		interval = setInterval(append, 50);
+<script>
+	let year = new Date().getFullYear();
+  </script>
+  
+  <footer>
+	<p>&copy; {year} Everydaywebthings - <a href="/privacypolicy" class="privacy-link">Privacy Policy</a></p>
+  </footer>
+  
+  <style>
+	/* Add your styling here */
+	footer {
+	  text-align: center;
+	  padding: 10px 0;
+	  border-top: 1px solid #ccc; /* Horizontal line separator */
+	  /* Other styles... */
 	}
-
-	function shrink() {
-		clearInterval(interval);
-		interval = setInterval(remove, 20);
+  
+	/* Styles for the link */
+	a {
+	  color: #333;
+	  text-decoration: none;
+	  /* Other link styles... */
 	}
-
-	function append() {
-		murphy = murphy + 'y';
+  
+	/* Styles for the privacy policy link */
+	.privacy-link {
+	  color: blue; /* Set privacy policy link color to blue */
+	  /* Other privacy policy link styles... */
 	}
-
-	function remove() {
-		if (murphy === 'Murphy') {
-			clearInterval(interval);
-			return;
-		}
-		murphy = murphy.slice(0, -1);
+  
+	/* Styles for dark mode */
+	/* You can adapt these styles according to your dark mode requirements */
+	@media (prefers-color-scheme: dark) {
+	  footer {
+		border-top-color: #888; /* Adjust the separator color for dark mode */
+		color: #fff;
+	  }
+	  a {
+		color: #fff;
+	  }
+	  .privacy-link {
+		color: #00f; /* Change privacy policy link color to blue in dark mode */
+		/* Other privacy policy link styles for dark mode... */
+	  }
 	}
-</script>
-
-<footer class="flex flex-row gap-4 justify-between content-center items-center mt-4 w-full">
-	<div class="space-y-1">
-		Made by me the
-		<a href="https://github.com/StrangeGirlMurph" class="text-green hover:underline">
-			StrangeGirlMurph
-		</a>
-		<div class="text-xs alt-color">
-			Copyright © 2023&nbsp;<span
-				aria-hidden="true"
-				class="absolute"
-				on:mouseenter={grow}
-				on:mouseleave={shrink}
-			>
-				{murphy}
-			</span>
-		</div>
-	</div>
-
-	<a
-		class="sm:hover:animate-bounce flex items-center justify-center bg-gradient-to-br from-[#ff4ea3] to-[#ff5e5c] p-2 font-semibold rounded-lg"
-		href="/support"
-	>
-		<span class="text-neutral-100 hidden sm:block">Support Me</span>
-		<span class="text-neutral-100 sm:hidden">Sponsor</span>
-	</a>
-</footer>
+  </style>
+  

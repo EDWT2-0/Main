@@ -6,9 +6,9 @@
 
     export const menus = [
         { name: 'Home', href: '/' },
-        { name: 'About Us', href: '/AboutUs' },
+        { name: 'About Us', href: '/Aboutus' },
         { name: 'More from us', href: '/More' },
-        { name: 'Contact Us', href: '/ContactUs' },
+        { name: 'Contact Us', href: '/Contactus' },
     ];
 
     let menuOpen = false;

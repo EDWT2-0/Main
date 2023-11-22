@@ -1,3 +1,15 @@
+
+
+<head>
+	<title>Home</title>
+	<meta name="description" content="Explore a variety of useful web tools at Everyday Web Things. From generators, calculators, games and more, discover a world of online utilities." />
+	<meta name="keywords" content="web tools, online utilities, calculators, generators, games, Everyday Web Things" />
+  
+  </head>
+
+
+
+
 <style>
 	/* Basic CSS for layout and styling */
 	.categories {

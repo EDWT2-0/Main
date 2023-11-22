@@ -1,6 +1,16 @@
 <!-- TeamPage.svelte -->
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn more about the team behind everydaywebthings.com, a platform offering simple and useful web tools, apps, games, and more! Meet our team members - Sam Thibault (CEO), Jacob Macflee (Developer), Flavio Herrera (Developer), and more. Stay connected with us on social media.">
+  <meta name="keywords" content="about us, our team, everydaywebthings, web tools, apps, games, team members, CEO, developer, Sam Thibault, Jacob Macflee, Flavio Herrera, social media">
+  <meta name="author" content="EverydayWebThings">
+  <title>About Us - Our Team </title>
+</head>
+
 <main>
+
+
 	<h1>About us / Our Team</h1>
   
 	<p>Welcome to everydaywebthings.com! The webs swiss army knife for simple and useful Web tools, Apps, Games and More!.</p>

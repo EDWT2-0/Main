@@ -91,7 +91,7 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/Aboutus": [3],
+		"/AboutUs": [3],
 		"/AdventureChallenges": [4],
 		"/AreaCalculator": [5],
 		"/AstronomyTools": [6],
@@ -104,7 +104,7 @@ export const dictionary = {
 		"/ClicktheButton": [13],
 		"/CodingQuiz": [14],
 		"/ColorPaletteGenerator": [15],
-		"/Contactus": [16],
+		"/ContactUs": [16],
 		"/Countdown": [17],
 		"/CurrencyConverter": [18],
 		"/DailyBrainTeaser": [19],

@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/ImageResizer/+page.svelte";
+export { default as component } from "../../../../src/routes/InteractivePeriodicTable/+page.svelte";

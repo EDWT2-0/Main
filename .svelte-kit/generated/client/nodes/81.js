@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/VolumeCalculator/+page.svelte";
+export { default as component } from "../../../../src/routes/WordCounter/+page.svelte";

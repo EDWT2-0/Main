@@ -92,12 +92,10 @@
 	</h2>
 	<div class="buttons-container">
 <a href="/DigitalWhiteboard" class="button">DigitalWhiteboard</a>
-<a href="/SimpleWeatherInfo" class="button">Simple Weather Info</a>
 <a href="/BasicTranslator" class="button">Basic Translator</a>
 <a href="/URLShortener" class="button">URL Shortener</a>
 <a href="/Timer" class="button">Timer</a>
 <a href="/StopWatch" class="button">StopWatch</a>
-<a href="/FlashCardMaker" class="button">Flash Card Maker</a>
 <a href="/DigitalCountdownCalendar" class="button">Digital Countdown Calendar</a>
 <a href="/Countdown" class="button">Countdown</a>
 <a href="/QuickPollCreator" class="button">Quick Poll Creator</a>
@@ -180,7 +178,6 @@
 	</h2>
 	<div class="buttons-container">
 		<a href="/TikTacToe" class="button">Tik Tac Toe</a>
-		<a href="/ClicktheButton" class="button">Click the Button</a>
 		<a href="/JokeoftheDay" class="button">Joke of the Day</a>
 		<a href="/DailyFunFact" class="button">Daily Fun Fact</a>
 		<a href="/DailyBrainTeaser" class="button">Daily Brain Teaser</a>
@@ -221,9 +218,7 @@
 
 	</h2>
 	<div class="buttons-container">
-		<a href="/ImageResizer" class="button">Image Resizer</a>
 		<a href="/DestinationRecommender" class="button">Destination Recommender</a>
-		<a href="/AdventureChallenges" class="button">Adventure Challenges</a>
 		<a href="/TravelBudgetPlanner" class="button">Travel Budget Planner</a>
 		<a href="/TravelSafetyTips" class="button">Travel Safety Tips</a>
 		

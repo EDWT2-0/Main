@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/FlashCardMaker/+page.svelte";
+export { default as component } from "../../../../src/routes/FractionCalculator/+page.svelte";

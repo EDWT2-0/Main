@@ -60,7 +60,28 @@
   
   
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4751283696014624"
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+
+
+import AdSense from '../components/AdSense.svelte'; 
+
+import { onMount } from 'svelte';
+
+let page = '/'; // Set the page path to '/' for the home page
+
+// Function to track page view
+function trackPageView() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+	dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-H2EFXSCDHN', { 'page_path': page });
+}
+
+onMount(trackPageView);
+
+</script>
   
 	
 	<div class="categories">

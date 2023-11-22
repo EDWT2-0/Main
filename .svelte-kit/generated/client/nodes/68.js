@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/Stopwatch/+page.svelte";
+export { default as component } from "../../../../src/routes/SquareRootCalculator/+page.svelte";

@@ -5,14 +5,14 @@
       {
         name: 'Generators',
         tools: [
-          { name: 'Random Word Generator', link: '/RandomWordGenerator', icon: '' },
-          { name: 'Random Quote Generator', link: '/tools/notes', icon: '' },
-          { name: 'Random Paragraph Generator', link: '/RandomParagraphGenerator', icon: '' },
-          { name: 'Random Number Generator', link: '/RandomNumberGenerator', icon: '' },
-          { name: 'Random Color Generator', link: '/RandomColorGenerator', icon: '' },
-          { name: 'Random Name Generator', link: '/RandomNameGenerator', icon: '' },
-          { name: 'Dummy Image Generator', link: '/DummyImageGenerator', icon: '' },
-          { name: 'Qr Generator', link: '/QrCodeGenerator', icon: '' },
+        { name: 'Random Word Generator', link: '/RandomWordGenerator', icon: '🔤' },
+        { name: 'Random Quote Generator', link: '/RandomQuoteGenerator', icon: '💬' },
+        { name: 'Random Paragraph Generator', link: '/RandomParagraphGenerator', icon: '📝' },
+        { name: 'Random Number Generator', link: '/RandomNumberGenerator', icon: '🔢' },
+        { name: 'Random Color Generator', link: '/RandomColorGenerator', icon: '🎨' },
+        { name: 'Random Name Generator', link: '/RandomNameGenerator', icon: '👤' },
+        { name: 'Dummy Image Generator', link: '/DummyImageGenerator', icon: '🖼️' },
+        { name: 'Qr Generator', link: '/QrCodeGenerator', icon: '🔲' }
       
           // Add more tools for productivity
         ],
@@ -21,9 +21,10 @@
         name: 'Productivity',
         tools: [
           { name: 'Timer & Stop Watch', link: '/Timer&StopWatch', icon: '⏰' },
-          { name: 'Currency Converter', link: '/CurrencyConverter', icon: '🤑' },
-          { name: 'Time Zone Converter', link: '/TimeZoneConverter', icon: '' },
-          { name: 'Screen Ruler', link: '/ScreenRuler', icon: '' },
+          { name: 'Currency Converter', link: '/CurrencyConverter', icon: '💱' },
+          { name: 'Time Zone Converter', link: '/TimeZoneConverter', icon: '⌚' },
+          { name: 'Screen Ruler', link: '/ScreenRuler', icon: '📏' },
+          { name: 'VirtualDice', link: '/VirtualDice', icon: '🎲' },
           
           // Add more utility tools
         ],
@@ -31,14 +32,14 @@
       {
         name: 'Calculators',
         tools: [
-          { name: 'Standard Calculator', link: '/tools/bmi-calculator', icon: '' },
-          { name: 'Scientific Calculator', link: '/ScientificCalculator', icon: '' },
-          { name: 'Square Root Calculator', link: '/SquareRootCalculator', icon: '' },
-          { name: 'Percentage Calculator', link: '/PercentageCalculator', icon: '' },
-          { name: 'Area Calculator', link: '/AreaCalculator', icon: '' },
-          { name: 'Volume Calculator', link: '/VolumeCalculator', icon: '' },
-          { name: 'Fraction Calculator', link: '/FractionCalculato', icon: '' },
-          { name: 'Budget Calculator', link: '/BudgetCalculator', icon: '' },
+            { name: 'Standard Calculator', link: '/tools/bmi-calculator', icon: '🧮' },
+            { name: 'Scientific Calculator', link: '/ScientificCalculator', icon: '🔬' },
+            { name: 'Square Root Calculator', link: '/SquareRootCalculator', icon: '√' },
+            { name: 'Percentage Calculator', link: '/PercentageCalculator', icon: '%' },
+            { name: 'Area Calculator', link: '/AreaCalculator', icon: '📐' },
+            { name: 'Volume Calculator', link: '/VolumeCalculator', icon: '⚱️' },
+            { name: 'Fraction Calculator', link: '/FractionCalculato', icon: '1/2' },
+            { name: 'Budget Calculator', link: '/BudgetCalculator', icon: '💵' }
           // Add more health & fitness tools
         ],
       },
@@ -47,7 +48,6 @@
         tools: [
           { name: 'Digital Science Quiz', link: '/DigitalScienceQuiz', icon: '🧪' },
           { name: 'Digital Math Quiz', link: '/DigitalMathQuiz', icon: '➕' },
-
           { name: 'Geography Quiz', link: '/GeographyQuiz', icon: '🌍' },
           { name: 'History Quiz', link: '/HistoryQuiz', icon: '📖' },
           { name: 'Coding Quiz', link: '/CodingQuiz', icon: '👨‍💻' },
@@ -57,27 +57,24 @@
       {
         name: 'Entertainment',
         tools: [
-          { name: 'Movie Recommender', link: '/tools/movie-recommender', icon: '🎬' },
-          { name: 'Music Player', link: '/tools/music-player', icon: '🎵' },
+         { name: 'Tic Tac Toe', link: '/TikTacToe', icon: 'ﾒ𝟶' },
+        { name: 'Joke of the Day', link: '/JokeoftheDay', icon: '😄' },
+        { name: 'Daily Fun Fact', link: '/DailyFunFact', icon: '🎉' },
+        { name: 'Daily Brain Teaser', link: '/DailyBrainTeaser', icon: '🧩' }
           // Add more entertainment tools
         ],
       },
       {
-        name: 'Travel',
+        name: 'Health and Wellness',
         tools: [
-          { name: 'Travel Planner', link: '/tools/travel-planner', icon: '✈️' },
-          { name: 'Currency Converter', link: '/tools/currency-converter', icon: '💱' },
+            { name: 'Calorie Counter', link: '/CalorieCounter', icon: '🥗' },
+            { name: 'Random Workouts', link: '/RandomWorkouts', icon: '🏋️‍♂️' },
+            { name: 'Positive Affirmations', link: '/PositiveAffirmations', icon: '✨' }
           // Add more travel tools
         ],
       },
-      {
-        name: 'Traveu',
-        tools: [
-          { name: 'Travel Planner', link: '/tools/travel-planner', icon: '✈️' },
-          { name: 'Currency Converter', link: '/tools/currency-converter', icon: '💱' },
-          // Add more travel tools
-        ],
-      },
+      
+      
     ];
   
     let allCategories = [...categories]; // Save all categories initially
@@ -170,29 +167,41 @@
     }
   
     .categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-  }
-
-  /* Updated style for each category container */
-  .category {
-    flex: 0 0 calc(33.33% - 40px); /* Three items per row */
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    color: #333;
-  }
-
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+    }
+  
+    /* Updated style for each category container */
+    .category {
+      flex: 0 0 calc(33.33% - 40px); /* Three items per row */
+      margin: 10px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      color: #333;
+    }
+  
+    @media (max-width: 767px) {
+      /* Changes for mobile screens */
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .category {
+        width: calc(100% - 20px);
+        flex: 0 0 calc(100% - 20px);
+      }
+    }
+  
     .tool-name {
       background-color: transparent !important; /* Remove background color */
     }
@@ -203,4 +212,7 @@
       vertical-align: middle;
     }
   </style>
+  
+  
+  
   

@@ -12,39 +12,40 @@
 
 
 
-	onMount(() => {
-	  const script = document.createElement("script");
-	  script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4751283696014624";
-	  script.async = true;
-	  script.crossOrigin = "anonymous";
-	
-	  document.head.appendChild(script);
-	});
-	
-	
-	
-	  import AdSense from '../components/AdSense.svelte'; 
-	  import GoogleAds from '../components/GoogleAds.svelte';
-	
-	
-	
-    let page = '/'; // Set the page path to '/' for the home page
 
 
+import { onMount } from 'svelte';
 
-  // Function to track page view
-  function trackPageView() {
+let page = '/'; // Set the page path to '/' for the home page
+
+// Function to track page view
+function trackPageView() {
+  window.gtag('config', 'G-H2EFXSCDHN', { 'page_path': page });
+}
+
+onMount(() => {
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-H2EFXSCDHN";
+  
+  script.onload = () => {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       window.dataLayer.push(arguments);
     }
+    window.gtag = gtag;
+
     gtag('js', new Date());
-    gtag('config', 'G-H2EFXSCDHN', { 'page_path': page });
-  }
+    gtag('config', 'G-H2EFXSCDHN', { 'send_page_view': false });
+    trackPageView(); // Track initial page view
+  };
 
-  import { onMount } from 'svelte';
+  document.head.appendChild(script);
+});
 
-  onMount(trackPageView); // Call trackPageView on component mount
+
+
+
 
 
 

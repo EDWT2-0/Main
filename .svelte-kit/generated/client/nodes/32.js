@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/ImageConverter/+page.svelte";
+export { default as component } from "../../../../src/routes/MortgageCalculator/+page.svelte";

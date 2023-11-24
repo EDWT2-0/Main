@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/BusinessNameGenerator/+page.svelte";
+export { default as component } from "../../../../src/routes/CalorieCounter/+page.svelte";

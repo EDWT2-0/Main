@@ -62,7 +62,8 @@ onMount(() => {
         { name: 'Random Color Generator', link: '/RandomColorGenerator', icon: '🎨' },
         { name: 'Random Name Generator', link: '/RandomNameGenerator', icon: '👤' },
         { name: 'Dummy Image Generator', link: '/DummyImageGenerator', icon: '🖼️' },
-        { name: 'Qr Generator', link: '/QrCodeGenerator', icon: '🔲' }
+        { name: 'Qr Generator', link: '/QrCodeGenerator', icon: '🔲' },
+        { name: 'Shakespearean insult generator', link: '/ShakespeareanInsultGenerator', icon: '📛' }
       
           // Add more tools for productivity
         ],
@@ -75,6 +76,8 @@ onMount(() => {
           { name: 'Time Zone Converter', link: '/TimeZoneConverter', icon: '⌚' },
           { name: 'Screen Ruler', link: '/ScreenRuler', icon: '📏' },
           { name: 'VirtualDice', link: '/VirtualDice', icon: '🎲' },
+          { name: 'Holiday Countdown Calendar', link: '/HolidayCountdownCalendar', icon: '🎄' },
+          { name: 'Password Strength Checker', link: '/PasswordStrengthChecker', icon: '🔒' },
           
           // Add more utility tools
         ],
@@ -101,6 +104,8 @@ onMount(() => {
           { name: 'Geography Quiz', link: '/GeographyQuiz', icon: '🌍' },
           { name: 'History Quiz', link: '/HistoryQuiz', icon: '📖' },
           { name: 'Coding Quiz', link: '/CodingQuiz', icon: '👨‍💻' },
+          { name: 'Critical Thinking Exercises', link: '/CriticalThinkingExercises', icon: '🤔' },
+          { name: 'Interactive Periodic Table', link: '/InteractivePeriodicTable', icon: '🔬' },
           // Add more educational tools
         ],
       },
@@ -110,7 +115,9 @@ onMount(() => {
          { name: 'Tic Tac Toe', link: '/TikTacToe', icon: 'ﾒ𝟶' },
         { name: 'Joke of the Day', link: '/JokeoftheDay', icon: '😄' },
         { name: 'Daily Fun Fact', link: '/DailyFunFact', icon: '🎉' },
-        { name: 'Daily Brain Teaser', link: '/DailyBrainTeaser', icon: '🧩' }
+        { name: 'Daily Brain Teaser', link: '/DailyBrainTeaser', icon: '🧩' },
+        { name: 'Memory Game Challenge', link: '/MemoryGameChallenge', icon: '🧠' }
+
           // Add more entertainment tools
         ],
       },
@@ -119,7 +126,9 @@ onMount(() => {
         tools: [
             { name: 'Calorie Counter', link: '/CalorieCounter', icon: '🥗' },
             { name: 'Random Workouts', link: '/RandomWorkouts', icon: '🏋️‍♂️' },
-            { name: 'Positive Affirmations', link: '/PositiveAffirmations', icon: '✨' }
+            { name: 'Positive Affirmations', link: '/PositiveAffirmations', icon: '✨' },
+            { name: 'Healthy Snack Ideas ', link: '/HealthySnackIdeas', icon: '🥦' },
+            { name: 'QuickMeditationSession', link: '/QuickMeditationSession', icon: '🧘‍♂️' }
           // Add more travel tools
         ],
       },

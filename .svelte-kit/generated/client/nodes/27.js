@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/DummyImageGenerator/+page.svelte";
+export { default as component } from "../../../../src/routes/HolidayCountdownCalendar/+page.svelte";

@@ -27,26 +27,24 @@
 	  import GoogleAds from '../components/GoogleAds.svelte';
 	
 	
-    
 	
     let page = '/'; // Set the page path to '/' for the home page
 
-// Function to track page view
-function trackPageView() {
-  if (typeof window !== 'undefined') {
-    (window as any).dataLayer = (window as any).dataLayer || [];
+
+
+  // Function to track page view
+  function trackPageView() {
+    window.dataLayer = window.dataLayer || [];
     function gtag() {
-      (window as any).dataLayer.push(arguments);
+      window.dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'G-H2EFXSCDHN', { 'page_path': page });
   }
-}
 
-import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
 
-onMount(trackPageView); // Call trackPageView on component mount
-
+  onMount(trackPageView); // Call trackPageView on component mount
 
 
 

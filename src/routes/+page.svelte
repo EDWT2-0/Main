@@ -78,7 +78,7 @@ onMount(() => {
           { name: 'VirtualDice', link: '/VirtualDice', icon: '🎲' },
           { name: 'Holiday Countdown Calendar', link: '/HolidayCountdownCalendar', icon: '🎄' },
           { name: 'Password Strength Checker', link: '/PasswordStrengthChecker', icon: '🔒' },
-          
+          { name: 'Useful Extentions', link: '/UsefulExtentions', icon: '🛠️' },
           // Add more utility tools
         ],
       },
@@ -132,8 +132,9 @@ onMount(() => {
           // Add more travel tools
         ],
       },
-      
-      
+     
+
+
     ];
   
     let allCategories = [...categories]; // Save all categories initially

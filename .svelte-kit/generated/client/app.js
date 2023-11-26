@@ -80,7 +80,8 @@ export const nodes = [
 	() => import('./nodes/76'),
 	() => import('./nodes/77'),
 	() => import('./nodes/78'),
-	() => import('./nodes/79')
+	() => import('./nodes/79'),
+	() => import('./nodes/80')
 ];
 
 export const server_loads = [];
@@ -154,12 +155,13 @@ export const dictionary = {
 		"/TravelSafetyTips": [71],
 		"/TypingSpeedTest": [72],
 		"/URLShortener": [73],
-		"/VirtualDice": [74],
-		"/VolumeCalculator": [75],
-		"/Weatherinfo": [76],
-		"/WordCounter": [77],
-		"/WordFormater": [78],
-		"/Worldsslowestloadingwebpage": [79],
+		"/UsefulExtentions": [74],
+		"/VirtualDice": [75],
+		"/VolumeCalculator": [76],
+		"/Weatherinfo": [77],
+		"/WordCounter": [78],
+		"/WordFormater": [79],
+		"/Worldsslowestloadingwebpage": [80],
 		"/passwordgenerator": [34],
 		"/privacypolicy": [39],
 		"/privacy": [38],

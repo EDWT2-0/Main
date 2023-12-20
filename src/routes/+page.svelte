@@ -5,7 +5,7 @@
   
   </head>
 
-
+  <meta name="google-adsense-account" content="ca-pub-4751283696014624">
 
   <script>
 

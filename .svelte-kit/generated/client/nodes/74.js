@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/UsefulExtentions/+page.svelte";
+export { default as component } from "../../../../src/routes/URLShortener/+page.svelte";

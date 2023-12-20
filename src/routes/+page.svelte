@@ -85,13 +85,13 @@ onMount(() => {
       {
         name: 'Calculators',
         tools: [
-            { name: 'Standard Calculator', link: '/tools/bmi-calculator', icon: '🧮' },
+            { name: 'Standard Calculator', link: '/BasicCalculator', icon: '🧮' },
             { name: 'Scientific Calculator', link: '/ScientificCalculator', icon: '🔬' },
             { name: 'Square Root Calculator', link: '/SquareRootCalculator', icon: '√' },
-            { name: 'Percentage Calculator', link: '/PercentageCalculator', icon: '%' },
+            { name: 'Percentage Calculator', link: '/PrecentageCalculator', icon: '%' },
             { name: 'Area Calculator', link: '/AreaCalculator', icon: '📐' },
             { name: 'Volume Calculator', link: '/VolumeCalculator', icon: '⚱️' },
-            { name: 'Fraction Calculator', link: '/FractionCalculato', icon: '1/2' },
+            { name: 'Fraction Calculator', link: '/FractionCalculator', icon: '1/2' },
             { name: 'Budget Calculator', link: '/BudgetCalculator', icon: '💵' }
           // Add more health & fitness tools
         ],

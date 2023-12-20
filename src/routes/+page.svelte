@@ -10,8 +10,7 @@
   <script>
 
 
-
-
+ 
 
 
 import { onMount } from 'svelte';
@@ -157,6 +156,8 @@ onMount(() => {
     onMount(() => {
       filterCategories(); // Initially show all categories
     });
+
+
   </script>
   
   

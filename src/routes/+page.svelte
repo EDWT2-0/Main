@@ -3,15 +3,21 @@
 	<meta name="description" content="Explore a variety of useful web tools at Everyday Web Things. From generators, calculators, games and more, discover a world of online utilities." />
 	<meta name="keywords" content="web tools, online utilities, calculators, generators, games, Everyday Web Things" />
   
-  </head>
+  
 
   <meta name="google-adsense-account" content="ca-pub-4751283696014624">
 
-  <script>
-
-
  
 
+
+<script type="text/javascript">
+    var infolinks_pid = 3411961;
+    var infolinks_wsid = 0;
+  </script>
+  <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+</head>
+
+<script>
 
 import { onMount } from 'svelte';
 

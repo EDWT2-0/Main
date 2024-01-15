@@ -82,7 +82,8 @@ export const nodes = [
 	() => import('./nodes/78'),
 	() => import('./nodes/79'),
 	() => import('./nodes/80'),
-	() => import('./nodes/81')
+	() => import('./nodes/81'),
+	() => import('./nodes/82')
 ];
 
 export const server_loads = [];
@@ -164,6 +165,7 @@ export const dictionary = {
 		"/WordCounter": [79],
 		"/WordFormater": [80],
 		"/Worldsslowestloadingwebpage": [81],
+		"/Youtubethumbnailtester": [82],
 		"/passwordgenerator": [34],
 		"/privacypolicy": [39],
 		"/privacy": [38],

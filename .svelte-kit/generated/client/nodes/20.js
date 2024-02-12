@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/DigitalMathQuiz/+page.svelte";
+export { default as component } from "../../../../src/routes/DailyBrainTeaser/+page.svelte";

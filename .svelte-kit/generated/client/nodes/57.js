@@ -1,1 +1,3 @@
-export { default as component } from "../../../../src/routes/ShakespeareanInsultGenerator/+page.svelte";
+import * as universal from "../../../../src/routes/Reportabug/+page.ts";
+export { universal };
+export { default as component } from "../../../../src/routes/Reportabug/+page.svelte";

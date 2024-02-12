@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/PrecentageCalculator/+page.svelte";
+export { default as component } from "../../../../src/routes/PasswordStrengthChecker/+page.svelte";

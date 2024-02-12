@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/ScientificCalculator/+page.svelte";
+export { default as component } from "../../../../src/routes/RandomWordGenerator/+page.svelte";

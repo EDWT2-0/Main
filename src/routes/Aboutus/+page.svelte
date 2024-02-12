@@ -13,7 +13,7 @@
 
 	<h1>About us / Our Team</h1>
   
-	<p>Welcome to everydaywebthings.com! The webs swiss army knife for simple and useful Web tools, Apps, Games and More!.</p>
+	<p>Welcome to everydaywebthings.com! we are like a web swiss army knife for simple and useful tools, Apps, Games and More!.</p>
   
 	<section class="team-members">
 	  <div class="team-member">
@@ -21,39 +21,22 @@
 		  <img src="Sampfpf.jpg" alt="Sam Thibault's profile picture" class="profile-image" />
 		</div>
 		<h2>Sam Thibault</h2>
-		<p>CEO</p>
+		<p>Owner & Developer</p>
 	  </div>
   
-	  <div class="team-member">
-		<div class="profile-container">
-		  <img src="jmp.jpg" alt="Jacob Macflee's profile picture" class="profile-image" />
-		</div>
-		<h2>Jacob Macflee</h2>
-		<p>Developer</p>
-	  </div>
-  
-	  <div class="team-member">
-		<div class="profile-container">
-		  <img src="ff.png" alt="Flavio Herrera's profile picture" class="profile-image" />
-		</div>
-		<h2>Flavio Herrera</h2>
-		<p>Developer</p>
-	  </div>
+	 
 	  
 	  <!-- Add more team members following the same structure -->
 	</section>
   
 	<section class="follow-us">
-	  <h2>Follow Us</h2>
+	  <h2>Follow along!</h2>
 	  <p>Stay connected with us on social media:</p>
 	  <!-- Add social media icons or links here -->
 	  <!-- Example: -->
 	  <div class="social-icons">
-		<a href="#" target="_blank" rel="noopener noreferrer">
-		  <img src="/twitter-icon.png" alt="Twitter" />
-		</a>
-		<a href="#" target="_blank" rel="noopener noreferrer">
-		  <img src="/facebook-icon.png" alt="Facebook" />
+		<a href="https://www.tiktok.com/@teebotech" target="_blank" rel="noopener noreferrer">
+		  <img src="/twitter-icon.png" alt="Tiktok" />
 		</a>
 		<!-- Add more social media icons or links as needed -->
 	  </div>

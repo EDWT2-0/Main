@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/QrCodeGenerator/+page.svelte";
+export { default as component } from "../../../../src/routes/privacypolicy/+page.svelte";

@@ -10,7 +10,7 @@
   </script>
   
   <footer>
-	<p>&copy; {year} Everydaywebthings - <a href="/privacypolicy" class="privacy-link">Privacy Policy</a></p>
+	<p>&copy; {year} Everydaywebthings All rights reserved - <a href="/privacypolicy" class="privacy-link">Privacy Policy</a></p>
 	<button on:click={scrollToTop} class="back-to-top">Back to Top</button>
   </footer>
   

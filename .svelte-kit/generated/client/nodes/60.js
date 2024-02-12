@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/SpaceTriviaChallenge/+page.svelte";
+export { default as component } from "../../../../src/routes/ShakespeareanInsultGenerator/+page.svelte";

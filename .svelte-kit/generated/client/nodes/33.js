@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/NameGenerator/+page.svelte";
+export { default as component } from "../../../../src/routes/MemoryGameChallenge/+page.svelte";

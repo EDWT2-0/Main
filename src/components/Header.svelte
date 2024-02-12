@@ -7,7 +7,7 @@
     export const menus = [
         { name: 'Home', href: '/' },
         { name: 'About Us', href: '/Aboutus' },
-        { name: 'More from us', href: '/More' },
+        { name: 'Random other things ', href: '/Randomotherthings ' },
         { name: 'Contact Us', href: '/Contactus' },
     ];
 

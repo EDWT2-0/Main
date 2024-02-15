@@ -1,9 +1,9 @@
 <!-- src/RandomQuoteGenerator.svelte -->
 
 <head>
-    <title>Random Quote Generator - Everyday Web Things</title>
+    <title>Random Quote Generator</title>
     <meta name="description" content="Get inspired with our random quote generator. Explore famous quotes, wisdom, and motivation at the click of a button." />
-    <meta name="keywords" content="random quote generator, inspirational quotes, famous quotes, motivation, wisdom" />
+    <meta name="keywords" content="random quote generator, inspirational quotes, famous quotes, motivation, wisdom, Generate Quotes, Quotes" />
   </head>
   
   
@@ -169,7 +169,7 @@
     /* Other styles for the component */
     main {
         text-align: center;
-        padding: 20px;
+        padding: 90px 20px; /* Added more vertical padding */
     }
 
     h1 {

@@ -122,8 +122,9 @@
     /* Other styles for the component */
     main {
         text-align: center;
-        padding: 20px;
-    }
+        padding: 90px 20px; /* Added more vertical padding */
+}
+    
 
     h1 {
         font-size: 28px;

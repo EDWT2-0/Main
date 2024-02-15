@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/RandomColorGenerator/+page.svelte";
+export { default as component } from "../../../../src/routes/QuizSheild/+page.svelte";

@@ -83,6 +83,7 @@
   /* Other styles for the component */
   h2 {
       font-size: 24px;
+      padding: 40px 20px; /* Added more vertical padding */
       margin-bottom: 10px;
       color: var(--text);
   }

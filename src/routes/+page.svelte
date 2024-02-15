@@ -68,7 +68,10 @@ onMount(() => {
         { name: 'Random Name Generator', link: '/RandomNameGenerator', icon: '👤' },
         { name: 'Dummy Image Generator', link: '/DummyImageGenerator', icon: '🖼️' },
         { name: 'Qr Generator', link: '/QrCodeGenerator', icon: '🔲' },
-        { name: 'Shakespearean insult generator', link: '/ShakespeareanInsultGenerator', icon: '📛' }
+        { name: 'Shakespearean insult generator', link: '/ShakespeareanInsultGenerator', icon: '📛' },
+        { name: 'Random fact generator', link: '/Randomfactgenerator', icon: '🧑‍🏭' },
+
+        
       
           // Add more tools for productivity
         ],
@@ -133,7 +136,7 @@ onMount(() => {
             { name: 'Random Workouts', link: '/RandomWorkouts', icon: '🏋️‍♂️' },
             { name: 'Positive Affirmations', link: '/PositiveAffirmations', icon: '✨' },
             { name: 'Healthy Snack Ideas ', link: '/HealthySnackIdeas', icon: '🥦' },
-            { name: 'QuickMeditationSession', link: '/QuickMeditationSession', icon: '🧘‍♂️' }
+            { name: 'QuickMeditationSession', link: '/QuickMeditationSession', icon: '🧘‍♂️' },
           // Add more travel tools
         ],
       },

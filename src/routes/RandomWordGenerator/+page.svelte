@@ -1,9 +1,9 @@
 <!-- src/RandomWordGenerator.svelte -->
 
 <head>
-  <title>Random Word Generator - Everyday Web Things</title>
+  <title>Random Word Generator</title>
   <meta name="description" content="Generate random words and phrases with our online word generator. Create unique content, brainstorm ideas, and more." />
-  <meta name="keywords" content="random word generator, generate words, random phrases, unique content, creative writing" />
+  <meta name="keywords" content="random word generator, generate words, random phrases, unique content, creative writing, Random Word Generator, Random words, Word Generator" />
   <!-- Add other meta tags as needed -->
 </head>
 
@@ -206,84 +206,77 @@
 
 
 <style>
-  /* Your CSS styles here */
+ /* Define color variables */
+:root {
+  --background-light: #f7f7f7;
+  --background-dark: #333;
+  --text-light: #333;
+  --text-dark: #f7f7f7;
+  --button-light: #0078d4;
+  --button-dark: #005ea2;
+}
+
+/* Apply dark mode styles */
+@media (prefers-color-scheme: dark) {
   :root {
-    --background-light: #f7f7f7;
-    --background-dark: #333;
-    --text-light: #333;
-    --text-dark: #f7f7f7;
-    --button-light: #0078d4;
-    --button-dark: #005ea2;
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+    --button: var(--button-dark);
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: var(--background-dark);
-      --text: var(--text-dark);
-      --button: var(--button-dark);
-    }
-
-    select {
-      color: var(--text-dark);
-      background-color: var(--background);
-    }
-
-    input[type="number"],
-    button {
-      background-color: var(--button);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 8px 12px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: darken(var(--button), 10%);
-    }
-  }
-
-  /* Other styles for the component */
-  main {
-    text-align: center;
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  label {
-    margin-right: 10px;
-  }
-
-  select {
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-
+  select,
   input[type="number"] {
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    width: 60px;
+    color: var(--text);
+    background-color: var(--background);
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
+  button {
+    background-color: var(--button);
   }
 
-  li {
-    margin-bottom: 5px;
+  button:hover {
+    background-color: rgba(0, 94, 162, 0.9); /* Darken the button on hover */
   }
+}
+
+/* Common styles for the component */
+main {
+  text-align: center;
+  padding: 90px 20px; /* Added more vertical padding */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select,
+input[type="number"],
+button {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
 </style>
 
 

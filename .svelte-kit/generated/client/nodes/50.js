@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/RandomNumberGenerator/+page.svelte";
+export { default as component } from "../../../../src/routes/Randomfactgenerator/+page.svelte";

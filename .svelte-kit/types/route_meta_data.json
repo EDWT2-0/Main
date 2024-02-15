@@ -33,6 +33,7 @@
 	"/MemoryGameChallenge": [],
 	"/MortgageCalculator": [],
 	"/NameGenerator": [],
+	"/Otherthings": [],
 	"/PasswordStrengthChecker": [],
 	"/PositiveAffirmations": [],
 	"/PrecentageCalculator": [],
@@ -49,7 +50,7 @@
 	"/RandomRecipeGenerator": [],
 	"/RandomWordGenerator": [],
 	"/RandomWorkouts": [],
-	"/Randomotherthings": [],
+	"/Randomfactgenerator": [],
 	"/Reportabug": [
 		"src/routes/Reportabug/+page.ts"
 	],

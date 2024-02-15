@@ -61,6 +61,7 @@ body {
 
   div {
     text-align: center;
+    padding: 90px 20px; /* Added more vertical padding */
     margin: 20px;
   }
 

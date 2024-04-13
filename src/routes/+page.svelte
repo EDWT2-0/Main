@@ -7,7 +7,7 @@
 
   <meta name="google-adsense-account" content="ca-pub-4751283696014624">
 
- 
+  <meta name="ezoic-site-verification" content="onMlqG8ocOv2BH3S1K8JLGuWGT4RCQ" />
 
 
 <script type="text/javascript">

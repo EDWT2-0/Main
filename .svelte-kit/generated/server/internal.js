@@ -17,10 +17,10 @@ export const options = {
 	root,
 	service_worker: false,
 	templates: {
-		app: ({ head, body, assets, nonce, env }) => "<!DOCTYPE html>\r\n<html lang=\"en\"> \r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<!-- <meta name=\"theme-color\" content=\"#bc9cc9\" /> -->\r\n\t\t<link rel=\"icon\" href=\"favicon.ico\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n\t\t<link href=\"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap\" rel=\"stylesheet\">\r\n\t\t" + head + "\r\n\t</head>\r\n\t<body data-sveltekit-preload-data=\"hover\">\r\n\t\t<div style=\"display: contents\">" + body + "</div>\r\n\t</body>\r\n</html>\r\n",
+		app: ({ head, body, assets, nonce, env }) => "<!DOCTYPE html>\r\n<html lang=\"en\"> \r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<!-- <meta name=\"theme-color\" content=\"#bc9cc9\" /> -->\r\n\t\t<link rel=\"icon\" href=\"favicon.ico\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n\t\t<link href=\"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap\" rel=\"stylesheet\">\r\n\t\t<meta name=\"ezoic-site-verification\" content=\"onMlqG8ocOv2BH3S1K8JLGuWGT4RCQ\" />\r\n\t\t" + head + "\r\n\t</head>\r\n\t<body data-sveltekit-preload-data=\"hover\">\r\n\t\t<div style=\"display: contents\">" + body + "</div>\r\n\t</body>\r\n</html>\r\n",
 		error: ({ status, message }) => "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n        <link rel=\"icon\" href=\"%sveltekit.assets%/favicon.ico\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width\" />\r\n\t\t<title>Error " + status + " </title>\r\n\t</head>\r\n\t<body>\r\n\t\t<h1>Error " + status + " - " + message + "</h1>\r\n\t\t<p>Something went wrong! <a href=\"https://\">Homepage</a>.</p>\r\n\t</body>\r\n</html>\r\n"
 	},
-	version_hash: "16gmfhs"
+	version_hash: "x5us1l"
 };
 
 export function get_hooks() {
